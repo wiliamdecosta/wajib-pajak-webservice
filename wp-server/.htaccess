@@ -1,0 +1,10 @@
+##
+# Put allowed IP address to access web server folder
+# example :
+# Require ip 127.0.0.1
+# or
+# Require host thisismywebsite.com
+##
+
+Require ip ::1
+Require ip 127.0.0.1
