@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Portal Dinas Pelayanan Pajak (DISYANJAK) Kota Bandung</title>
+        <title>Badan Pendapatan Daerah</title>
 
         <meta name="keywords" content="HTML5 Template" />
         <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -76,7 +76,7 @@
                             <div class="header-column">
                                 <div class="header-logo">
                                     <a href="index.php">
-                                        <img alt="Porto" width="250" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="theme/img/logo-disyanjak.png">
+                                        <img alt="Porto" width="250" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="theme/img/logo-lokut.png">
                                     </a>
                                 </div>
                             </div>
@@ -88,13 +88,13 @@
                                                 <a href="#"> Call Us : </a>
                                             </li>
                                             <li>
-                                                <span class="ws-nowrap"><i class="fa fa-phone"></i> (022) 423-5052 </span>
+                                                <span class="ws-nowrap"><i class="fa fa-phone"></i> (0370) - </span>
                                             </li>
                                             <li class="hidden-xs">
                                                 <a href="#"> Address : </a>
                                             </li>
                                             <li>
-                                                <span class="ws-nowrap"><i class="fa fa-map-marker"></i> Jl.Wastukancana No.2-Bandung </span>
+                                                <span class="ws-nowrap"><i class="fa fa-map-marker"></i> Jl. Tioq Tata Tunaq, Desa Tanjung Kecamatan Tanjung Lombok Utara NTB </span>
                                             </li>
                                         </ul>
                                     </nav>

@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-ribbon">
-                            <span>Dinas Pelayanan Pajak</span>
+                            <span>Badan Pendapatan Daerah</span>
                         </div>
                         <div class="col-md-6">
                             <h4>Tentang Kami</h4>
@@ -16,9 +16,9 @@
                             <div class="contact-details">
                                 <h4>Kontak Kami</h4>
                                 <ul class="contact">
-                                    <li><p><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jl.Wastukancana No.2-Bandung </p></li>
-                                    <li><p><i class="fa fa-phone"></i> <strong>Telepon:</strong> (022) 423-5052</p></li>
-                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:support@disyanjak.bandung.go.id">disyanjak.bandung.go.id</a></p></li>
+                                    <li><p><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jl. Tioq Tata Tunaq, Desa Tanjung Kecamatan Tanjung Lombok Utara NTB </p></li>
+                                    <li><p><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0370) - </p></li>
+                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:bapenda@lombokutarakab.go.id">bapenda@lombokutarakab.go.id</a></p></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,11 +36,11 @@
                         <div class="row">
                             <div class="col-md-1">
                                 <a href="index.html" class="logo">
-                                    <img alt="Porto Website Template" class="img-responsive" src="theme/img/logo-disyanjak.png">
+                                    <img alt="Porto Website Template" class="img-responsive" src="theme/img/logo-lokut.png">
                                 </a>
                             </div>
                             <div class="col-md-7">
-                                <p>Dinas Pelayanan Pajak Kota Bandung © Copyright 2016. All Rights Reserved.</p>
+                                <p>Badan Pendapatan Daerah Lombok Utara © Copyright 2017. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
