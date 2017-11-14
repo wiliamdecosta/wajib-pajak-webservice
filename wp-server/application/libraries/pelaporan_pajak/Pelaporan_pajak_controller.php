@@ -204,9 +204,13 @@ class Pelaporan_pajak_controller {
 			$q = $ci->db->query($q);
 			$result = $q->result_array();
 			if($result == null){
-				$q = "SELECT *,to_char(start_date,'dd-mm-yyyy') as start_date_string,to_char(end_date,'dd-mm-yyyy') as end_date_string
-						from view_finance_period_bayar
-						limit 36";
+				$q = "SELECT * FROM  (
+							SELECT *,to_char(start_date,'dd-mm-yyyy') as start_date_string,to_char(end_date,'dd-mm-yyyy') as end_date_string
+													from view_finance_period_bayar
+													limit 15
+
+							) as foo
+							order by foo.p_finance_period_id asc";
 				$q = $ci->db->query($q);
 				$result = $q->result_array();
 			};

@@ -25,9 +25,9 @@ class Auth_controller {
                     join t_customer b on b.t_customer_id = a.t_customer_id
                     join t_cust_account c on c.t_customer_id = a.t_customer_id
                     join p_app_user d on a.p_app_user_id = d.p_app_user_id
-                    where d.app_user_name = ?";
+                    where d.app_user_name = ? and is_employee = ?";
 
-            $query = $ci->db->query($sql, array($username));
+            $query = $ci->db->query($sql, array($username, 'N'));
             $row = $query->row_array();
 
             $data['user_record'] = $row;

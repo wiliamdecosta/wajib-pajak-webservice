@@ -6,7 +6,7 @@
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
         <div class="page-footer">
-            <div class="page-footer-inner"> Copyright &copy; 2016  Disyanjak.</div>
+            <div class="page-footer-inner"> Copyright &copy; 2017  Badan Pendapatan Daerah.</div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
             </div>

@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Badan Pendapatan Daerah</title>
+        <title><?php echo $INSTANSI_3; ?></title>
 
         <meta name="keywords" content="HTML5 Template" />
         <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -88,13 +88,13 @@
                                                 <a href="#"> Call Us : </a>
                                             </li>
                                             <li>
-                                                <span class="ws-nowrap"><i class="fa fa-phone"></i> (0370) - </span>
+                                                <span class="ws-nowrap"><i class="fa fa-phone"></i> <?php echo $ALAMAT_2; ?> </span>
                                             </li>
                                             <li class="hidden-xs">
                                                 <a href="#"> Address : </a>
                                             </li>
                                             <li>
-                                                <span class="ws-nowrap"><i class="fa fa-map-marker"></i> Jl. Tioq Tata Tunaq, Desa Tanjung Kecamatan Tanjung Lombok Utara NTB </span>
+                                                <span class="ws-nowrap"><i class="fa fa-map-marker"></i> <?php echo $ALAMAT_1; ?> </span>
                                             </li>
                                         </ul>
                                     </nav>

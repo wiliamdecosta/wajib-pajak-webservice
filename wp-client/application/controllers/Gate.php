@@ -9,10 +9,25 @@ class Gate extends CI_Controller {
 		$common_link_daftar =  base_url().'register';
 		$common_link_login = base_url().'auth';
 
+		$_POST['codes'] = json_encode(array('ALAMAT_1',
+											'ALAMAT_2',
+											'ALAMAT_3',
+											'INSTANSI_1',
+											'INSTANSI_2',
+											'EMAIL_1',
+											'INSTANSI_3'));
 
-		$this->load->view('gate', array('link_daftar' => $common_link_daftar,
-											'link_login' => $common_link_login)
-							);
+		$global_params = callWS('frontend.frontend_controller', 'get_global_params');
+		$gb_params = $global_params['global_params'];
+
+		$params =  array('link_daftar' => $common_link_daftar,
+						'link_login' => $common_link_login);
+
+		foreach($gb_params as $item) {
+			$params[$item['code']] = $item['value'];
+		}
+
+		$this->load->view('gate', $params);
 
 	}
 }

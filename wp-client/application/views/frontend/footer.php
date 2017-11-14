@@ -4,21 +4,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-ribbon">
-                            <span>Badan Pendapatan Daerah</span>
+                            <span><?php echo ucwords(strtolower($INSTANSI_2)); ?></span>
                         </div>
                         <div class="col-md-6">
                             <h4>Tentang Kami</h4>
                             <p>
-                                “Professional dan Prima dalam Pengelolaan Pajak Daerah Menuju Bandung Unggul, Nyaman dan Sejahtera”
+                                “Professional dan Prima dalam Pengelolaan Pajak Daerah Menuju Lombok Utara Unggul, Nyaman dan Sejahtera”
                             </p>
                         </div>
                         <div class="col-md-4">
                             <div class="contact-details">
                                 <h4>Kontak Kami</h4>
                                 <ul class="contact">
-                                    <li><p><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jl. Tioq Tata Tunaq, Desa Tanjung Kecamatan Tanjung Lombok Utara NTB </p></li>
-                                    <li><p><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0370) - </p></li>
-                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:bapenda@lombokutarakab.go.id">bapenda@lombokutarakab.go.id</a></p></li>
+                                    <li><p><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> <?php echo $ALAMAT_1; ?> </p></li>
+                                    <li><p><i class="fa fa-phone"></i> <strong>Telepon:</strong> <?php echo $ALAMAT_2; ?></p></li>
+                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:bapenda@lombokutarakab.go.id"><?php echo $EMAIL_1; ?></a></p></li>
                                 </ul>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                             <h4>Follow Kami</h4>
                             <ul class="social-icons">
                                 <!--<li class="social-icons-facebook"><a href="https://www.facebook.com/pages/Disyanjak-kota-bandung/1522255291359771" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
-                                <li class="social-icons-twitter"><a href="https://twitter.com/disyanjakkotbdg" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li class="social-icons-twitter"><a href="https://twitter.com/#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                                 </a>
                             </div>
                             <div class="col-md-7">
-                                <p>Badan Pendapatan Daerah Lombok Utara © Copyright 2017. All Rights Reserved.</p>
+                                <p><?php echo $INSTANSI_3; ?> © Copyright 2017. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

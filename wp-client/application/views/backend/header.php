@@ -24,7 +24,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="<?php base_url();?>">
-                        <img src="<?php echo base_url(); ?>theme/img/logo-disyanjak.png" width="100" alt="logo" class="logo-default" /> </a>
+                        <img src="<?php echo base_url(); ?>theme/img/logo-lokut-clear.png" width="100" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <span></span>
                     </div>
