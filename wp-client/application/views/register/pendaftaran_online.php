@@ -149,7 +149,7 @@
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Email</b></label>
-                                                        <input type="text" name="user_email" id="FormInputuser_email" class="form-control" placeholder="Email" required>
+                                                        <input type="email" name="user_email" id="FormInputuser_email" class="form-control" placeholder="Email" required>
                                                     </div>
 
                                                     <div class="form-group">
@@ -284,12 +284,12 @@
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Kode Pos</b></label>
-                                                        <input type="text" name="wp_zip_code_Name" id="t_vat_registrationFormwp_zip_code" class="form-control" placeholder="Kode Pos" required>
+                                                        <input type="text" name="wp_zip_code_Name" id="t_vat_registrationFormwp_zip_code" class="form-control" placeholder="Kode Pos" maxlength="6" required>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Email</b></label>
-                                                        <input type="text" name="wp_email_Name" id="t_vat_registrationFormwp_email" class="form-control" placeholder="Email" required>
+                                                        <input type="email" name="wp_email_Name" id="t_vat_registrationFormwp_email" class="form-control" placeholder="Email" required>
                                                     </div>
 
                                                     <!-- Perusahaan/Badan -->
@@ -390,7 +390,7 @@
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Kode Pos</b></label>
-                                                        <input type="text" name="zip_code_Name" id="t_vat_registrationFormzip_code" class="form-control" placeholder="Kode Pos" required>
+                                                        <input type="text" name="zip_code_Name" id="t_vat_registrationFormzip_code" class="form-control" placeholder="Kode Pos" maxlength="6" required>
                                                     </div>
 
                                                     <!-- Merk Usaha -->
@@ -491,7 +491,7 @@
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Kode Pos</b></label>
-                                                        <input type="text"  name="brand_zip_code_Name" id="t_vat_registrationFormbrand_zip_code" class="form-control" placeholder="Kode Pos" required>
+                                                        <input type="text"  name="brand_zip_code_Name" id="t_vat_registrationFormbrand_zip_code" class="form-control" placeholder="Kode Pos" maxlength="6" required>
                                                     </div>
 
                                                     <!-- Pemilik/Pengelola -->
@@ -606,12 +606,12 @@
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Kode Pos</b></label>
-                                                        <input type="text" name="zip_code_owner_Name" id="t_vat_registrationFormzip_code_owner" class="form-control" placeholder="Kode Pos" required>
+                                                        <input type="text" name="zip_code_owner_Name" id="t_vat_registrationFormzip_code_owner" class="form-control" placeholder="Kode Pos" maxlength="6" required>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label for="form_control"><b>Email</b></label>
-                                                        <input type="text" name="email_owner_Name" id="t_vat_registrationFormemail_owner" class="form-control" placeholder="Email" required>
+                                                        <input type="email" name="email_owner_Name" id="t_vat_registrationFormemail_owner" class="form-control" placeholder="Email" required>
                                                     </div>
 
                                                 </div>
@@ -773,6 +773,22 @@
             
         }
 
+        function sendmail(){
+            // Send the data using post
+                $.ajax({
+                    url: "<?php echo site_url('register/send_email_pendaftaran');?>",
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                      email : $('#t_vat_registrationFormwp_email').val(),
+                      name : $('#t_vat_registrationFormwp_name').val()
+                    },
+                    success: function (data) {
+
+                    }
+                });
+        }
+
         function submitform(url, postData){
             // Send the data using post
                 $.ajax({
@@ -785,6 +801,8 @@
                     data: postData,
                     success: function (data) {
                         if(data.success){
+
+                            sendmail();
                             swal('Informasi',data.message,'success');
                         }else{
                             swal('Informasi',data.message,'info');

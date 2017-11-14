@@ -1,4 +1,5 @@
 <?php
+require('swift/lib/swift_required.php');
 
 function getVarClean($name, $type = '', $defaultValue = NULL)
 {
@@ -141,6 +142,30 @@ function startExcel($filename = "laporan.xls") {
    header("Cache-Control: must-revalidate, post-check=0,pre-check=0");
    header("Pragma: public");
     
+}
+
+function sendEmail($email, $name, $subject, $text){
+    $mailConfig = array(
+        'host_smtp' => 'smtp.gmail.com',
+         'username' => 'mpd.lombok@gmail.com',
+         'password' => 'n0p4ssw0rd'
+    );
+
+    $transport = Swift_SmtpTransport::newInstance($mailConfig['host_smtp'], 465, "ssl")
+      ->setUsername($mailConfig['username'])
+      ->setPassword($mailConfig['password']);
+    $mailer = Swift_Mailer::newInstance($transport);
+    
+    try{
+        $message = Swift_Message::newInstance('SMPD - Lombok Utara')
+          ->setFrom(array($mailConfig['username'] => $subject))
+          ->setTo($email, $name)
+          ->setBody($text, 'text/html');
+        $result = $mailer->send($message);
+    }catch(Exception $e){
+        $result = 0;
+    }
+    return $result;
 }
 
 ?>
