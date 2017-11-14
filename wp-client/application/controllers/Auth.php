@@ -10,8 +10,22 @@ class Auth extends CI_Controller {
             redirect(base_url().'panel');
         }
 
+        $_POST['codes'] = json_encode(array('ALAMAT_1',
+											'ALAMAT_2',
+											'ALAMAT_3',
+											'INSTANSI_1',
+											'INSTANSI_2',
+											'EMAIL_1',
+											'INSTANSI_3'));
+
+		$global_params = callWS('frontend.frontend_controller', 'get_global_params');
+		$gb_params = $global_params['global_params'];
+
         $data = array();
         $data['login_url'] = base_url()."auth/login";
+        foreach($gb_params as $item) {
+            $data[$item['code']] = $item['value'];
+        }
 
 		$this->load->view('auth/login', $data);
 	}
