@@ -363,7 +363,7 @@
 
         if(rowData['kuitansi_pembayaran'] != "") {
             var t_customer_order_id = rowData['t_customer_order_id'];
-            var urlref = "http://"+mpdServerLocation+"/cetak_formulir_sspd_pdf.php?t_customer_order_id="+t_customer_order_id;
+            var urlref = "http://"+mpdServerLocation+"/cetak_formulir_sspd_pdf/pageCetak?t_customer_order_id="+t_customer_order_id;
             window.open(urlref, "_blank", "toolbar=0,location=0,menubar=0");
         }else {
             swal('Informasi','Maaf, Cetak SSPD tidak dapat dilakukan karena record yang dipilih belum dibayar','info');
