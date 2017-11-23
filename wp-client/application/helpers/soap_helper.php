@@ -6,6 +6,7 @@
         $wsdl = $ci->config->item('ws_server');
         //create instance
         $nusoap = new nusoap_client ( $wsdl, true );
+		$nusoap->setEndpoint($wsdl);
         $user = "wsclient";
         $pass = "secret";
 
